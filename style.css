@@ -1,0 +1,72 @@
+
+@font-face {
+    font-family: sorabolt;
+    src: url(fonts/Sora/static/Sora-ExtraBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sorabolt", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #051320;
+}
+.calendar{
+    position: relative;
+    width: 260px;
+}
+.calendar .calendar-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,27,126,1) 41%);
+    backdrop-filter: blur(15px);
+    border-bottom: 6px solid #4285F4;
+    border-right: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgb(1, 1, 1 / 15%);
+}
+.calendar .calendar-body .month-name{
+    color: #fff;
+    background: #4285F4;
+    
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 400;
+    padding: 5px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.calendar .calendar-body .day-name{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.calendar .calendar-body .date-number{
+    color: #fff;
+    font-size: 6em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.calendar .calendar-body .year{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.calendar .calendar-body .year:hover{
+    font-size: 2em;
+    color: yellow ;
+    transition:all 0.5s;
+    
+}
